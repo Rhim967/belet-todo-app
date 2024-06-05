@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "date": "05.25.24",
+    "title": "important task",
+    "descr": "some decr",
+    "checked": true
+  },
+  {
+    "id": 1,
+    "date": "04.03.24",
+    "title": "important task",
+    "descr": "some decr",
+    "checked": false
+  },
+  {
+    "id": 2,
+    "date": "05.04.24",
+    "title": "important task",
+    "descr": "some decr",
+    "checked": false
+  }
+]
