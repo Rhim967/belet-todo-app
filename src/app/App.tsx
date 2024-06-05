@@ -39,21 +39,32 @@ function App() {
 
   // func for updating task
   const handleUpdateTask = (data: TaskProps, navigate: any) => {
-    console.log(data.date);
-    setAllTodos(
-      todos.map((item) => {
-        if (item.id == data.id) {
-          item.title = data.title;
-          item.descr = data.descr;
-          item.date = data.date;
-        }
-        return item;
-      })
-    );
-    navigate("/");
-
-    alert("task updated");
     //console.log(data);
+    if (data.title && data.descr) {
+      setAllTodos(
+        todos.map((item) => {
+          if (
+            item.id == data.id &&
+            item.title == data.title &&
+            item.descr == data.descr
+          ) {
+            item.title = data.title;
+            item.descr = data.descr;
+            item.date = data.date;
+          }
+          return item;
+        })
+      );
+      navigate("/");
+
+      alert("task updated");
+    }
+    if (!data.title) {
+      alert("please type title for task");
+    }
+    if (!data.descr) {
+      alert("please type description for task");
+    }
   };
 
   // load todos firs time in start app

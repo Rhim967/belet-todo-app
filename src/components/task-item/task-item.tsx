@@ -20,7 +20,7 @@ export const TaskItem = ({
 }: TaskItemProps) => {
   return (
     <li className="task-item" key={id}>
-      <div className="task-item__info bg-lime-500 flex justify-between place-items-center  mb-2">
+      <div className="task-item__info bg-lime-500 flex justify-between place-items-center  pb-2">
         <h3 className="task-title">{title}</h3>
         <div className="icon-box mx-4 my-2 flex justify-center place-items-center">
           {/* <input type="checkbox" className="mr-2" /> */}
@@ -39,12 +39,14 @@ export const TaskItem = ({
         </div>
       </div>
 
-      <NavLink to={`task/${id}`}>
-        <div className="task-date text-end mr-2 mb-2">
-          {new Date(date ? date : "").toLocaleDateString("ru-RU")}
-        </div>
-        <p className="task-decr">{descr}</p>
-      </NavLink>
+      <div className="body bg-white">
+        <NavLink to={`task/${id}`}>
+          <div className="task-date text-end mr-2 mb-2 min-h-6">
+            {new Date(date ? date : "").toLocaleDateString("ru-RU")}
+          </div>
+          <p className="task-decr">{descr}</p>
+        </NavLink>
+      </div>
     </li>
   );
 };

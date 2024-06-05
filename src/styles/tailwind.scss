@@ -17,7 +17,7 @@ body {
 }
 
 .task-item {
-  @apply my-2 md:m-0 w-full border-current border-gray-100 hover:border-sky-500 border-2 shadow-inner hover:shadow-lg rounded-lg;
+  @apply my-2 md:m-0 w-full border-current hover:border-sky-500 border-black border-2 hover:shadow-lg rounded-lg;
   .task-title {
     @apply text-slate-950 font-medium text-xs md:text-sm m-4;
   }
