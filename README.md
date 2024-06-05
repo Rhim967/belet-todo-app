@@ -7,5 +7,4 @@
   - `npm install`
   - `yarn dev `
 
-## [site is live at](https://rhim967.github.io/)
-# belet-todo-app
+## [Live demo click here](https://rhim967.github.io/)
